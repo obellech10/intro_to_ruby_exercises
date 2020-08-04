@@ -85,12 +85,12 @@ require 'pry'
 # puts "Awesome, here they are sorted."
 # puts words.sort
 
-# sort
+# Exercises
 
-def sort(array)
-
+def calculate_bonus(salary, bonus)
+  bonus ? salary / 2 : 0
 end
 
-def recursive_sort(unsorted_array, sorted_array)
-
-end 
+puts calculate_bonus(2800, true) == 1400
+puts calculate_bonus(1000, false) == 0
+puts calculate_bonus(50000, true) == 25000
