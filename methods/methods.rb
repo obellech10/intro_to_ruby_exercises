@@ -55,6 +55,3 @@ def scream(words)
 end
 
 scream("Yippeee")
-
-
-

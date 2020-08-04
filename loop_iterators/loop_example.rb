@@ -17,11 +17,30 @@ array.each_with_index do |value, index|
 end
 =end
 
-def countdown(num)
-  puts num
-  if num > 0
-    countdown(num - 1)
+# def countdown(num)
+#   puts num
+#   if num > 0
+#     countdown(num - 1)
+#   end
+# end
+#
+# countdown(-3)
+
+# x = gets.chomp.to_i
+#
+# while x >= 0
+#   puts x
+#   x -= 1
+# end
+#
+# puts "Done!"
+
+def fibonacci(number)
+  if number < 2
+    number
+  else
+    fibonacci(number - 1) + fibonacci(number - 2)
   end
 end
 
-countdown(-3)
+puts fibonacci(14)
